@@ -1,0 +1,157 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bogdan Đaković</title>
+    <link rel="stylesheet" href="sass/index.css">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li id="SS" onclick="openUrl('https://www.github.com/bogyz123/sharepictures')">Sharepictures</li>
+            <li id="CX" onclick="openUrl('https://www.github.com/bogyz123/codebox')">Codebox</li>
+            <li id="SNKRS" onclick="openUrl('https://www.github.com/bogyz123/SNKRS')">SNKRS</li>
+            <li id="LY" onclick="openUrl('https://www.github.com/bogyz123/linkify')">Linkify</li>
+            <li id="CE" onclick="openUrl('https://www.github.com/bogyz123/chattie')">Chattie</li>
+        </ul>
+    </nav>
+    <div class="about">
+        <div class="about__content">
+            <p class="about__name">I'M <br> BOGDAN ĐAKOVIĆ</p>
+            <hr>
+            <p class="about__profession">Frontend Web Developer</p>
+        </div>
+        <div class="about__me">
+            <p id="about__me__description">I am a self-taught web developer, mainly working in React and constantly
+                learning new
+                skills to stay up-to-date with the latest web technologies!
+                <br>
+                Currently, I'm not in college and I've graduated from Technical High School in the city of Loznica.
+                <br>
+                I was born on third December of 2003 which makes me <span class="auto-write">19 years old.</span>
+
+                <br>
+                I have completed a couple of personal projects showcasing my React & other libraries' skills! You can
+                access those websites <span class="link" onmouseleave="scaleNav('descale')"
+                    onmouseover="scaleNav('scale')" style="color:orangered">here.</span>
+                <br>
+                I am very proficient at both speaking and writing clean English as well as JavaScript!
+                <br>
+                My main goal is to learn how to write more clean & efficient code and become the best possible version
+                of myself as a developer!
+                <br>
+                My long-term goal is to become a full-stack developer & work on big projects!
+            </p>
+
+
+        </div>
+
+    </div>
+    <div class="connector"></div>
+    <div class="about__skills">
+        <p class="about__title">SKILLS</p>
+        <code
+            class="center">These are the technologies that I've used throughout my projects! (You can hover over to see what projects are using them)</code>
+        <ul id="skills__list">
+            <li class="skill" onmouseover="popProject('pop', ['SS', 'CX', 'SNKRS', 'LY', 'CE'])"
+                onmouseleave="popProject('unpop', ['SS', 'CX', 'SNKRS', 'LY', 'CE'])">
+                HTML & CSS
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </li>
+            <li class="skill" onmouseover="popProject('pop', ['SS', 'CX', 'SNKRS', 'LY', 'CE'])"
+                onmouseleave="popProject('unpop', ['SS', 'CX', 'SNKRS', 'LY', 'CE'])">
+                JavaScript
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+
+            </li>
+            <li class="skill" onmouseover="popProject('pop', ['SS', 'CX', 'SNKRS', 'CE'])"
+                onmouseleave="popProject('unpop', ['SS', 'CX', 'SNKRS', 'CE'])">
+                React.JS
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+            </li>
+
+            <li class="skill" onmouseover="popProject('pop', ['LY'])" onmouseleave="popProject('unpop', ['LY'])">
+                Node &
+                Express
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+            </li>
+            <li class="skill" onmouseover="popProject('pop', ['SS', 'CX', 'SNKRS', 'CE'])"
+                onmouseleave="popProject('unpop', ['SS', 'CX', 'SNKRS', 'CE'])">
+                Firebase
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+            </li>
+
+            <li class="skill" onmouseover="popProject('pop', ['LY'])" onmouseleave="popProject('unpop', ['LY'])">
+                MongoDB
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+            </li>
+            <li class="skill" onmouseover="popProject('pop', ['SS', 'CX', 'SNKRS', 'CE'])"
+                onmouseleave="popProject('unpop', ['SS', 'CX', 'SNKRS', 'CE'])">
+                Redux & Redux-Persist
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+            </li>
+            <li class="skill" onmouseover="popProject('pop', ['SNKRS', 'LY'])"
+                onmouseleave="popProject('unpop', ['SNKRS', 'LY'])">EmailJS, ChartJS & QRJs</li>
+
+        </ul>
+        <div>
+            <img src="git.png" id="github" alt="github logo" onclick="openUrl('https://www.github.com/bogyz123')">
+        </div>
+        <p class="center">You can check more on my github!</p>
+    </div>
+
+
+    <div id="link-warning">
+        <p>Just making sure you're okay with this...</p>
+        <code id="link-url" class="center">this will open <span></span></code>
+        <button class="link-choice" onclick="handleLink('success', 'https://www.github.com/bogyz123')">we good</button>
+        <button class="link-choice" onclick="handleLink('failure')">later</button>
+    </div>
+</body>
+
+</html>
